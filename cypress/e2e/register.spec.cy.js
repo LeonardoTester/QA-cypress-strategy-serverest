@@ -1,17 +1,17 @@
+import RegisterPage from "./pages/RegisterPage"
+
+const FeautreRegister = new RegisterPage()
 
 describe('Register Test', () => {
 
   it(' Register - Success )', () => {
 
-      cy.visit('/login')
-
-    
+      FeautreRegister.VisitRegister()
+      FeautreRegister.InfoSection()
+   
   })
 
-    it(' Register - Fail )', () => {
-
-    
-
+    it.skip(' Register - Fail )', () => {
     
   })
   
