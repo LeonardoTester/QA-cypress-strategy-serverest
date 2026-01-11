@@ -1,5 +1,5 @@
-import registerVisit from "./pages/VisitRegisterPage"
-import userRegistration from "./pages/RegistrationPage"
+import registerVisit from "../pagesObject/VisitRegisterPage"
+import userRegistration from "../pagesObject/RegistrationPage"
 
 const visitFeature = new registerVisit()
 const registrationFeature = new userRegistration()
@@ -10,7 +10,7 @@ describe('Register Test', () => {
 
       visitFeature.visitRegister()
       visitFeature.infoSection()
-      registrationFeature.registrationFill("Leonardo", "leooo@gmail.com", "seeenha234")
+      registrationFeature.registrationFill("Leonardo", "leooddo@gmail.com", "seeenha234")
       registrationFeature.registrationClick()
       registrationFeature.registrationCheck()
 
