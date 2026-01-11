@@ -1,18 +1,26 @@
-import RegisterPage from "./pages/RegisterPage"
+import registerVisit from "./pages/VisitRegisterPage"
+import userRegistration from "./pages/RegistrationPage"
 
-const FeautreRegister = new RegisterPage()
+const visitFeature = new registerVisit()
+const registrationFeature = new userRegistration()
 
 describe('Register Test', () => {
 
   it(' Register - Success )', () => {
 
-      FeautreRegister.VisitRegister()
-      FeautreRegister.InfoSection()
-   
+      visitFeature.visitRegister()
+      visitFeature.infoSection()
+      registrationFeature.registrationFill("Leonardo", "leooo@gmail.com", "seeenha234")
+      registrationFeature.registrationClick()
+      registrationFeature.registrationCheck()
+
   })
 
     it.skip(' Register - Fail )', () => {
     
+      visitFeature.visitRegister()
+      visitFeature.infoSection()
+
   })
   
 })
