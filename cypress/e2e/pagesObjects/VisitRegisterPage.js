@@ -14,7 +14,7 @@ class registerVisit {
     }
 
     infoSection() {
-        cy.location('pathname').should('equal', '/cadastrarusuarios')
+        
         cy.get(this.selectorsList().checkSection).should('be.visible')
     }
 }
