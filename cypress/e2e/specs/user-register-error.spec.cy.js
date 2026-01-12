@@ -7,8 +7,21 @@ const visitFeature = new registerVisit()
 const registrationFeature = new userRegistration()
 
 describe('Register Test', () => {
+  // MANUAL TEST: Change the values in the 'userFail' object within the fixtures (userData.js) to test manually
+  it(' Register - Fail (Manual interaction )', () => {
 
-  it(' Register - Fail )', () => {
+      const user = userData.userFail
+
+      visitFeature.visitRegister()
+      visitFeature.infoSection()
+      registrationFeature.registrationFill(user.username, user.useremail, user.password)
+      registrationFeature.registrationClick()
+      registrationFeature.registrationCheckUsed()
+      
+  })
+
+   // AUTOMATED VALIDATION: Run this to validate mandatory field messages automatically
+   it.skip('Register - Fail (Empty fields validation )', () => {
 
       const user = userData.userFail
 

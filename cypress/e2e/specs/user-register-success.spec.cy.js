@@ -16,7 +16,8 @@ describe('Register Test', () => {
       visitFeature.infoSection()
       registrationFeature.registrationFill(user.username, user.useremail, user.password)
       registrationFeature.registrationClick()
-      registrationFeature.registrationCheck()
+      registrationFeature.registrationCheckSuccess()
+      registrationFeature.registrationCheckUsed()
 
   })
   

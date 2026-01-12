@@ -8,8 +8,8 @@ export const userData = {
   },
 
   userFail: {
-    username: "test",
-    useremail: "email-invalido",
-    password: "test"
+    username: "leonadwadrdsefsfso",
+    useremail: "leodwdwafsefsfdnardo@gmail.com",
+    password: "vafsefssc999"
   }
 }
