@@ -1,5 +1,5 @@
-import registerVisit from "../pagesObjects/VisitRegisterPage"
-import userRegistration from "../pagesObjects/RegistrationPage"
+import registerVisit from "../pagesObjects/VisitRegisterPage.js"
+import userRegistration from "../pagesObjects/RegistrationPage.js"
 import { userData } from '../../fixtures/userData.js'
 
 const { userSuccess } = userData
