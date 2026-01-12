@@ -2,15 +2,15 @@ import registerVisit from "../pagesObjects/VisitRegisterPage"
 import userRegistration from "../pagesObjects/RegistrationPage"
 import { userData } from '../../fixtures/userData.js'
 
-const { userSuccess } = userData
+const { userFail } = userData
 const visitFeature = new registerVisit()
 const registrationFeature = new userRegistration()
 
 describe('Register Test', () => {
 
-  it(' Register - Success )', () => {
+  it(' Register - Fail )', () => {
 
-      const user = userData.userSuccess
+      const user = userData.userFail
 
       visitFeature.visitRegister()
       visitFeature.infoSection()
@@ -19,5 +19,5 @@ describe('Register Test', () => {
       registrationFeature.registrationCheck()
 
   })
-  
+
 })
