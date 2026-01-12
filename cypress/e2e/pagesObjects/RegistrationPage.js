@@ -8,7 +8,8 @@ class userRegistration {
             ButtonField: "[data-testid='cadastrar']",
             AlertSuccess: ".alert-primary",
             AlertUsed: ".alert-secondary",
-            AlertError: "[role='alert']"
+            AlertError: "[role='alert']",
+            adminCheckbox: "[data-testid='checkbox']"
 
         }
     }
@@ -18,6 +19,12 @@ class userRegistration {
         if (email) { cy.get(this.selectorsList().registerEmail).clear().type(email) }
         if (name) { cy.get(this.selectorsList().registerName).clear().type(name) }
         if (password) { cy.get(this.selectorsList().registerPassword).clear().type(password) }
+
+        // O Cypress verifica o valor que você definiu lá no cypress.config.js
+        if (Cypress.env('isAdmin')) {
+        // Se estiver true, ele marca a caixa de administrador
+        cy.get(this.selectorsList().adminCheckbox).click({ force: true })
+        }
     }
 
     registrationClick() {
