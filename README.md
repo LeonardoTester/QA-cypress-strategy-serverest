@@ -63,8 +63,9 @@ npx cypress run
 
 ---
 
-### 🛠️ Melhores Práticas Aplicadas
+## 🛠️ Melhores Práticas Aplicadas
 
-Tratamento de Erros: Validação de mensagens de alerta obrigatórias e alertas de credenciais inválidas.
-
-Evidências de Teste: Gravação de vídeo e capturas de tela configuradas no pipeline.
+* **Tratamento de Erros:** Validação de mensagens de alerta obrigatórias e alertas de credenciais inválidas.
+* **Evidências de Teste:** Gravação de vídeo e capturas de tela configuradas no pipeline de CI/CD.
+* **Page Object Model (POM):** Estrutura focada em reuso de código e fácil manutenção.
+* **Data-Driven Testing:** Uso de dados randômicos para garantir a independência dos testes.
