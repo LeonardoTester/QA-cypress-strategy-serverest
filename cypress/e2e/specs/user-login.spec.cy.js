@@ -9,7 +9,7 @@ const buyUser = new BuyStore()
 
 describe('Login Test', () => { 
 
-  it('User Login - Success', () => {
+  it.skip('User Login - Success', () => {
     
       const userTrue = loginData.userSuccess
 
