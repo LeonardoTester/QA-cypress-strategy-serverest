@@ -24,24 +24,24 @@ Para facilitar a manutenção, o projeto utiliza as seguintes classes:
 O projeto utiliza **Data-Driven Testing** com arquivos JavaScript nas fixtures:
 * **Geração de dados únicos**: Utilizamos `Date.now()` e `Math.random()` para criar e-mails e nomes aleatórios em tempo real. Isso evita que os testes de cadastro falhem por "usuário já existente" em execuções repetidas.
 
-## 🚀 Como rodar os testes
+### 🚀 Como rodar os testes
 
 ### Pré-requisitos
 * Node.js instalado.
 
-### Passo a passo
-1. Instale as dependências:
-   ```bash
-   npm install
+## Instalação e Execução:
 
-2. Abrir o Cypress
-  ```Bash
-   npx cypress open
+```bash
+# 1. Instalar dependências
+npm install
 
-3. ```Bash
-   npx cypress run
+# 2. Abrir Cypress (Interface)
+npx cypress open
 
-   ---
+# 3. Rodar Testes (Terminal)
+npx cypress run
+
+---
 
 ### Passo 7: Finalizar com as Melhores Práticas
 Adicione os pontos técnicos que você aplicou:
