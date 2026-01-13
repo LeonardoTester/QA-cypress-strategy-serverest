@@ -60,6 +60,7 @@ npx cypress open
 
 # 4. Executar os testes em modo Headless (Terminal)
 npx cypress run
+```
 
 ---
 
