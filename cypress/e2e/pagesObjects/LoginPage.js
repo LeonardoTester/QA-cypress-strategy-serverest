@@ -7,10 +7,7 @@ class LoginVisit {
             passwordField: "[data-testid='senha']",
             loginButton: '[data-testid="entrar"]',
             wrongCredentialAlert: "[role='alert']",
-            dashBoard:".container-fluid",
 
-            
-             
         }
     }
 
@@ -25,9 +22,8 @@ class LoginVisit {
         cy.get(this.selectorsList().usernameField).type(usarname)
         cy.get(this.selectorsList().passwordField).type(password)
         cy.get(this.selectorsList().loginButton).click()
-        cy.get(this.selectorsList().dashBoard)
-
     }
+    
 
     AlertErrorLogin() {
         

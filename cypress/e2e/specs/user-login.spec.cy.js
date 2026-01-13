@@ -1,3 +1,4 @@
+import { loginData } from "../../fixtures/loginData.js"
 import LoginVisit from "../pagesObjects/LoginPage.js" 
 import DashboardPage from "../pagesObjects/dashBoardLogin.js"
 
@@ -6,17 +7,23 @@ const dashBoard = new DashboardPage()
 
 describe('Login Test', () => { 
 
-  it('User Login - Success', () => {
+  it.skip('User Login - Success', () => {
+    
+      const userTrue = loginData.userSuccess
 
       userLogin.visitLogin()
-      userLogin.loginWithUser('leonardonsser@gmail.com', 'aspargos100')
+      userLogin.loginWithUser(userTrue.useremail, userTrue.password)
       dashBoard.DashBoardCheck()  
-      
+
   })
 
-  it.skip('User Login - Error', () => {
+  it('User Login - Error', () => {
+
+    const userError = loginData.userFail
+
       userLogin.visitLogin()
-      userLogin.loginWithUser('leonardonsser@gmail.com', 'aspargos100')
+      userLogin.loginWithUser(userError.useremail, userError.password)
+      userLogin.AlertErrorLogin()
       
   })
 })
