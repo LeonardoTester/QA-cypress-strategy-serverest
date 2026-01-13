@@ -32,13 +32,17 @@ O projeto utiliza **Data-Driven Testing** com arquivos JavaScript nas fixtures:
 ## Instalação e Execução:
 
 ```bash
- 1. Instalar dependências
+ 1. Clonar o projeto
+ 
+ https://github.com/LeonardoTester/QA-cypress-strategy-serverest.git
+
+ 2. Instalar dependências
 npm install
 
- 2. Abrir Cypress (Interface)
+ 3. Abrir Cypress (Interface)
 npx cypress open
 
- 3. Rodar Testes (Terminal)
+ 4. Rodar Testes (Terminal)
 npx cypress run
 
 ```
