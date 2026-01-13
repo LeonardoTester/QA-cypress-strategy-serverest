@@ -1,7 +1,7 @@
 export const loginData = {
   userSuccess: {
-    useremail: "leonardonsser@gmail.com",
-    password: "vasco123"
+    useremail: "emotion@gmail.com",
+    password: "aspargos100"
   },
 
   userFail: {

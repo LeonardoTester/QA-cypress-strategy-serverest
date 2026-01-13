@@ -23,15 +23,14 @@ class LoginVisit {
         cy.get(this.selectorsList().passwordField).type(password)
         cy.get(this.selectorsList().loginButton).click()
     }
-    
 
-    AlertErrorLogin() {
+
+    alertErrorLogin() {
         
         cy.get(this.selectorsList().wrongCredentialAlert)
         cy.get('body').should('contain', 'Email e/ou senha inválidos')
 
-    }
-    
+    } 
 }
 
 export default LoginVisit
