@@ -32,21 +32,16 @@ O projeto utiliza **Data-Driven Testing** com arquivos JavaScript nas fixtures:
 ## Instalação e Execução:
 
 ```bash
-# 1. Instalar dependências
+ 1. Instalar dependências
 npm install
 
-# 2. Abrir Cypress (Interface)
+ 2. Abrir Cypress (Interface)
 npx cypress open
 
-# 3. Rodar Testes (Terminal)
+ 3. Rodar Testes (Terminal)
 npx cypress run
 
----
-
-### Passo 7: Finalizar com as Melhores Práticas
-Adicione os pontos técnicos que você aplicou:
-
-```markdown
+```
 ## 🛠️ Melhores Práticas Aplicadas
 - **Seletores Dinâmicos**: Uso de `data-testid` para seletores mais estáveis.
 - **Tratamento Condicional**: Verificação inteligente se o e-mail já está em uso sem interromper o fluxo do teste.
