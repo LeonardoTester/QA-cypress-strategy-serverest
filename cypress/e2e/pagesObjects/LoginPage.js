@@ -6,7 +6,10 @@ class LoginVisit {
             usernameField: "[data-testid='email']",
             passwordField: "[data-testid='senha']",
             loginButton: '[data-testid="entrar"]',
-            dashBoard:".container-fluid"
+            wrongCredentialAlert: "[role='alert']",
+            dashBoard:".container-fluid",
+
+            
              
         }
     }
@@ -26,6 +29,12 @@ class LoginVisit {
 
     }
 
+    AlertErrorLogin() {
+        
+        cy.get(this.selectorsList().wrongCredentialAlert)
+        cy.get('body').should('contain', 'Email e/ou senha inválidos')
+
+    }
     
 }
 
