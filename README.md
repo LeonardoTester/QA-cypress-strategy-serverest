@@ -50,7 +50,7 @@ O projeto está integrado ao **GitHub Actions**, garantindo que todos os testes 
 
 ```bash
 # 1. Clonar o repositório
-git clone [https://github.com/LeonardoTester/QA-cypress-strategy-serverest.git](https://github.com/LeonardoTester/QA-cypress-strategy-serverest.git)
+git clone [https://github.com/LeonardoTester/QA-cypress-strategy-serverest.git]
 
 # 2. Entrar na pasta e instalar as dependências
 npm install
