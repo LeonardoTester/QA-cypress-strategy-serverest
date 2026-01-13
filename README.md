@@ -62,6 +62,7 @@ npx cypress open
 npx cypress run
 
 ---
+
 ### 🛠️ Melhores Práticas Aplicadas
 
 Tratamento de Erros: Validação de mensagens de alerta obrigatórias e alertas de credenciais inválidas.
