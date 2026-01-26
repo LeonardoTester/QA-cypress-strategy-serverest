@@ -2,6 +2,7 @@ class userRegistration {
 
     selectorsList() {
         return {
+            
             registerName: "[name='nome']",
             registerEmail: "[name='email']",
             registerPassword: "[name='password']",
